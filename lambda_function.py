@@ -6,7 +6,7 @@ def lambda_handler(event, context):
     ec2_host = "75.101.248.64"  # EC2 Public IP or DNS
     ec2_user = "ec2-user"  # or 'ubuntu'
     ansible_playbook = "/etc/ansible/deploy.yaml"
-    key_file_path = "/var/task/vardhan.pem"  # path inside Lambda deployment package
+    key_file_path = "/var/task/ansible.pem"  # path inside Lambda deployment package
 
     # Make sure permissions are correct (Lambda needs read-only for key)
     #os.chmod(key_file_path, 0o400)
