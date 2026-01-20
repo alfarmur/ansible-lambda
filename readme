@@ -1,0 +1,6 @@
+ami with user data 
+
+#!/bin/bash
+yum update -y
+yum install -y python3 
+(Ansible needs Python on target nodes)
