@@ -1,0 +1,21 @@
+plugin: amazon.aws.aws_ec2
+
+regions:
+  - us-east-1
+
+filters:
+  tag:Name: dev
+  instance-state-name: running
+
+keyed_groups:
+  - key: tags.Name
+    prefix: tag_name
+
+hostnames:
+  - private-ip-address
+
+compose:
+  ansible_host: private_ip_address
+
+
+#ec2-uer]vi aws_ec2.yml
