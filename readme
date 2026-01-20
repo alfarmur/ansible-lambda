@@ -1,3 +1,6 @@
+create server with key
+lambda funstion explorer add ansible.pem file nad paste the pem key
+
 ami with user data 
 
 #!/bin/bash
